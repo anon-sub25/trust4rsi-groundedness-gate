@@ -1,0 +1,35 @@
+{
+  "tokenizer": {
+    "id": "Qwen/Qwen2.5-3B-Instruct",
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1"
+  },
+  "n_conversations": 10,
+  "n_units": 5882,
+  "n_qa": 1986,
+  "n_answerable": 1540,
+  "n_unanswerable": 446,
+  "n_unanswerable_usable": 444,
+  "excluded": {
+    "conv-26_q168": "cat5_has_gold_answer",
+    "conv-26_q179": "cat5_has_gold_answer"
+  },
+  "sessions_per_conversation": {
+    "conv-26": 19,
+    "conv-30": 19,
+    "conv-41": 32,
+    "conv-42": 29,
+    "conv-43": 29,
+    "conv-44": 28,
+    "conv-47": 31,
+    "conv-48": 30,
+    "conv-49": 25,
+    "conv-50": 30
+  },
+  "category_counts": {
+    "1": 282,
+    "2": 321,
+    "3": 96,
+    "4": 841,
+    "5": 446
+  }
+}

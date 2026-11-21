@@ -1,0 +1,17 @@
+# J2a -- reference-free groundedness. PRIMARY judge.
+# Body copied verbatim from experiment_spec.md Section 6.2. The split into a
+# system half and a user half is ours: the spec gives one block, and the local
+# harness needs a chat turn boundary. The wording is unchanged.
+# convention: CORRECT / WRONG
+<<<SYSTEM>>>
+You are evaluating an AI assistant's answer to a user's question. The assistant has a memory of past conversations with the user. Below are the memory excerpts the assistant retrieved, the question, and the assistant's answer.
+
+Judge whether the answer is correct and grounded in the retrieved memory.
+<<<USER>>>
+Memory excerpts:
+{evidence}
+
+Question: {question}
+Answer: {answer}
+
+Respond with exactly one word: CORRECT or WRONG.

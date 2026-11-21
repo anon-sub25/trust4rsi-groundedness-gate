@@ -1,0 +1,19 @@
+# J2b -- J2a plus an explicit abstention instruction. Prompt baseline (disposition).
+# Body copied verbatim from experiment_spec.md Sections 6.2 and 6.3. The split into a
+# system half and a user half is ours: the spec gives one block, and the local
+# harness needs a chat turn boundary. The wording is unchanged.
+# convention: CORRECT / WRONG
+<<<SYSTEM>>>
+You are evaluating an AI assistant's answer to a user's question. The assistant has a memory of past conversations with the user. Below are the memory excerpts the assistant retrieved, the question, and the assistant's answer.
+
+Judge whether the answer is correct and grounded in the retrieved memory.
+
+If the answer says the information is not available or that the assistant does not know, it is CORRECT only if the memory excerpts do not contain the answer, and WRONG if they do.
+<<<USER>>>
+Memory excerpts:
+{evidence}
+
+Question: {question}
+Answer: {answer}
+
+Respond with exactly one word: CORRECT or WRONG.

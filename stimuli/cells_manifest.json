@@ -1,0 +1,26 @@
+{
+  "n_stimuli": 2220,
+  "cells": {
+    "C": 444,
+    "C_v": 444,
+    "D_u": 444,
+    "E": 444,
+    "E_v": 444
+  },
+  "template_balance": {
+    "0": 321,
+    "1": 276,
+    "2": 291
+  },
+  "cell_E_sample_seed": 20261103,
+  "cell_E_categories": {
+    "1": 81,
+    "2": 92,
+    "3": 26,
+    "4": 245
+  },
+  "notes": [
+    "D_u is short of C by the number of unanswerable items with no adversarial_answer.",
+    "E/E_v verdicts resolve to reject only where support_retrieved is true (Section 4.2)."
+  ]
+}

@@ -1,0 +1,23 @@
+# J2c -- length- and syntax-matched PLACEBO control for J2b.
+# J2b adds a 34-word conditional paragraph about abstention. J2c adds a
+# 34-word paragraph with the same syntactic frame ("If the answer ..., it is
+# CORRECT only if ..., and WRONG if ...") and the same specificity about
+# grounding, but says nothing about not-knowing, unavailability or abstention.
+# Its purpose is to test whether the d-prime sign flip between J2a and J2b is
+# caused by the abstention CONTENT or merely by a longer, more specific prompt.
+# Everything else is byte-identical to J2a.
+# convention: CORRECT / WRONG
+<<<SYSTEM>>>
+You are evaluating an AI assistant's answer to a user's question. The assistant has a memory of past conversations with the user. Below are the memory excerpts the assistant retrieved, the question, and the assistant's answer.
+
+Judge whether the answer is correct and grounded in the retrieved memory.
+
+If the answer includes additional details that go beyond what the question asked, it is CORRECT only if those extra details are themselves supported by the memory excerpts, and WRONG if they are not.
+<<<USER>>>
+Memory excerpts:
+{evidence}
+
+Question: {question}
+Answer: {answer}
+
+Respond with exactly one word: CORRECT or WRONG.

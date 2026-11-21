@@ -1,0 +1,22 @@
+# J1 -- gold+evidence legacy judge.
+# Copied verbatim from neuripsv2/judgegeom/prompts.py::_V1_ORACLE (name "v1_oracle"),
+# itself archive/neurips/common/judge.py:160. Do not edit: the hash must match the
+# NeurIPS runs. See docs/spec-defects.md #1 -- despite the spec's table, this prompt
+# carries no gold_answer field; it is reference=evidence, relation=support.
+# convention: CORRECT / INCORRECT
+<<<SYSTEM>>>
+You are evaluating whether an AI assistant's answer to a question is correct, given the complete set of evidence relevant to that question. You will be shown the question, the assistant's answer, and the full evidence. Decide whether the answer is fully and specifically supported by the evidence -- a plausible-sounding answer that is not actually supported, or that fills a gap with unsupported detail, is INCORRECT. Respond with exactly one word: CORRECT or INCORRECT.
+<<<USER>>>
+<QUESTION>
+{question}
+</QUESTION>
+
+<FULL_EVIDENCE>
+{evidence}
+</FULL_EVIDENCE>
+
+<ASSISTANT_ANSWER>
+{answer}
+</ASSISTANT_ANSWER>
+
+Is the assistant's answer correct, given the full evidence above? Respond with exactly one word: CORRECT or INCORRECT.
